@@ -14,8 +14,17 @@ table 50101 Student
         {
             DataClassification = ToBeClassified;
         }
-        field(3; district; Text[30])
+        field(3; age; Integer)
         {
+            DataClassification = ToBeClassified;
+        }
+        field(4; district; Text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(5; religion; Option)
+        {
+            OptionMembers = muslim,hindu,christian,others;
             DataClassification = ToBeClassified;
         }
     }
