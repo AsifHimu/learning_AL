@@ -1,5 +1,6 @@
 table 50101 Student
 {
+    Caption = 'Student Table';
     DataClassification = ToBeClassified;
     
     fields
