@@ -26,6 +26,9 @@ page 50101 Student
                     ApplicationArea = All;
                     
                 }
+            }
+            group(others)
+            {
                 field(district; Rec.district)
                 {
                     ApplicationArea = All;
@@ -44,13 +47,13 @@ page 50101 Student
     {
         area(Processing)
         {
-            action(ActionName)
+            action(Test)
             {
                 ApplicationArea = All;
                 
                 trigger OnAction()
                 begin
-                    
+                    Message('Triggered');
                 end;
             }
         }
