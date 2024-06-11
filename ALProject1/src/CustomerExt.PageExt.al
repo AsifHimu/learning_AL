@@ -2,7 +2,7 @@ pageextension 50101 CustomerExt extends "Customer Card"
 {
     layout
     {
-        addfirst(General)
+        addlast(General)
         {
             field(Facebook; Rec.Facebook)
             {
@@ -12,7 +12,13 @@ pageextension 50101 CustomerExt extends "Customer Card"
             {
                 ApplicationArea = All;
             }
+            field(Instagram;Rec.Instagram)
+            {
+                ApplicationArea = All;
+            }
+
         }
+
     }
     
     actions

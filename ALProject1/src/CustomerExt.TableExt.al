@@ -10,5 +10,9 @@ tableextension 50101 CustomerExt extends Customer
         {
             DataClassification = ToBeClassified;
         }
+        field(502; Instagram; Text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 }
