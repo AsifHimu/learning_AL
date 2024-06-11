@@ -1,4 +1,4 @@
-page 50101 Student
+page 50101 StudentPage
 {
     PageType = Card;
     ApplicationArea = All;
