@@ -23,6 +23,6 @@ pageextension 50101 CustomerExt extends "Customer Card"
     
     actions
     {
-        // Add changes to page actions here
+        
     }
 }
