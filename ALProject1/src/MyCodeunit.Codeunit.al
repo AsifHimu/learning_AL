@@ -10,9 +10,10 @@ codeunit 50100 MyCodeunit
     procedure add(a: Integer; b:Integer)
     var
         total: Integer;
+        value: Integer;
     begin
         total := a + b;
-        Message('The sum value is %1',total);
+        Message('The sum value is %1 and random value is %2',total,value);
     end;
 
     var
