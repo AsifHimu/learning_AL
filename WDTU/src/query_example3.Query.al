@@ -1,14 +1,11 @@
-query 50102 "Customers Location Code BLUE"
+query 50103 "Sales(LCY) greater than 10000"
 {
-    Caption = 'Customers whose location code is BLUE';
     QueryType = Normal;
-    //QueryCategory = 'Customer List';
-
+    
     elements
     {
         dataitem(Customer; Customer)
         {
-            DataItemTableFilter = "Location Code" = const('BLUE');
             column(No_; "No.")
             {
                 
@@ -17,10 +14,11 @@ query 50102 "Customers Location Code BLUE"
             {
                 
             }
-            column(Location_Code; "Location Code")
+            filter(Sales__LCY_;"Sales (LCY)")
             {
-                
+                ColumnFilter = Sales__LCY_ = filter(>10000);
             }
+            
         }
     }
 }
