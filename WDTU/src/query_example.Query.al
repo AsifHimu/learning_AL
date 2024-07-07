@@ -7,15 +7,19 @@ query 50102 "List of customers"
     {
         dataitem(Customer; Customer)
         {
+            column(No_; "No.")
+            {
+                
+            }
+            column(Name; Name)
+            {
+                
+            }
             column(Address; Address)
             {
                 
             }
             column(Amount; Amount)
-            {
-                
-            }
-            column(Balance; Balance)
             {
                 
             }

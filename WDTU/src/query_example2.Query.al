@@ -1,32 +1,26 @@
-query 50101 "Top five customers"
+query 50101 "Customers Location Code BLUE"
 {
-    Caption = 'Top five customers';
+    Caption = 'Customers whose location code is BLUE';
     QueryType = Normal;
-    TopNumberOfRows = 5;
-    OrderBy = ascending(Sales_LCY_SUM);
     //QueryCategory = 'Customer List';
 
     elements
     {
-        dataitem(Cust__Ledger_Entry; "Cust. Ledger Entry")
+        dataitem(Customer; Customer)
         {
-            column(Customer_No_; "Customer No.")
+            DataItemTableFilter = "Location Code" = const('BLUE');
+            column(No_; "No.")
             {
                 
             }
-            column(Customer_Name; "Customer Name")
+            column(Name; Name)
             {
                 
             }
-            column(Sales_LCY_SUM; "Sales (LCY)")
+            column(Location_Code; "Location Code")
             {
-                Method = Sum;
+                
             }
         }
     }
-    
-    trigger OnBeforeOpen()
-    begin
-        
-    end;
 }
