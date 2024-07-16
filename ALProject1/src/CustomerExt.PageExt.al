@@ -23,6 +23,22 @@ pageextension 50101 CustomerExt extends "Customer Card"
     
     actions
     {
+         addfirst(processing)
+        {
+            action(MyAction)
+            {
+                ApplicationArea = All;
+                Caption = 'HiMU';
+                Image = Action;
+                Promoted = true;
+                PromotedCategory = Process;
+                ToolTip = 'This is my custom button';
+                trigger OnAction()
+                begin
+                    PAGE.Run(PAGE::"StudentPage");
+                end;
+            }
+        }
         
     }
 }
